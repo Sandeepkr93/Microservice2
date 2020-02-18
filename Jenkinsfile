@@ -40,7 +40,7 @@ def server= Artifactory.server 'jfrog'
                     def uploadSpec= """{
                         "files": [{
                         "pattern": "target/*.war",
-                        "target": "devopsweb"}]
+                        "target": "QAENV"}]
                     }"""
                     server.upload (uploadSpec)
 }  
